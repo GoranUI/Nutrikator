@@ -8,64 +8,165 @@
         <meta name="description" content="Nutrifikator description placeholder">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <script src="https://code.jquery.com/jquery-3.6.4.js"
+                integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+                crossorigin="anonymous"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+        <script src="scripts/script.js"></script>
     </head>
     <body>
         <main>
 
             <div class="background"></div>
-            
-            <nav class="nav">
-                <!-- <input type="checkbox" id="nav-check"> -->
-                
-                <div class="nav-logo">
-                        <a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
-                </div>
-                
-                <!-- <div class="nav-btn">
-                    <label for="nav-check">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </label>
-                </div> -->
-                
-                <div class="nav-links">
-                    <a href="#" target="_blank"><strong>Početna</strong></a>
-                    <a href="#" target="_blank">Usluge</a>
-                    <a href="#" target="_blank">Paketi</a>
-                    <a href="#" target="_blank">Recenzije</a>
-                    <a href="#" target="_blank">Kontakt</a>
-                    <a href="#" target="_blank" class="hidden-web">Odaberi paket</a>
-                </div>
-
-                <a href="#" class="nav-cta">
-                    <p class="white">Odaberi paket</p>
-                </a>
-            </nav>
-
-            <div class="header-section">
-                <div class="header-text-wrapper">
-                    <div class="header-text">
-                        <h2>Nutritivna deklaracija <br>
-                            <span>na Vaš zahtev</span></h2>
-                        <p>Nutrikator radi brzu i pouzdanu analizu Vašeg proizvoda - bez odlaska u laboratoriju</p>
-                    </div>
-                    <div class="button-wrap">
-                        <a href="#" class="btn-prim">Odaberi paket</a>
-                        <a href="#" class="btn-sec">Odaberi paket</a>
-                    </div>
-                </div>
-                <div id="image-container" class="header-image-wrapper">
-                    <div class="header-logos"></div>
-                    <img class="header-product-images" src="assets/images/header-products.png">
-                </div>
-            </div>
-            
+                        
             <header>
+                <nav class="nav">
+                    <!-- <input type="checkbox" id="nav-check"> -->
+                    
+                    <div class="nav-logo">
+                            <a href="index.html"><img class="logo" src="assets/images/logo.png"></a>
+                    </div>
+                    
+                    <!-- <div class="nav-btn">
+                        <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </label>
+                    </div> -->
+                    
+                    <div class="nav-links">
+                        <a href="#" target="_blank"><strong>Početna</strong></a>
+                        <a href="#" target="_blank">Usluge</a>
+                        <a href="#" target="_blank">Paketi</a>
+                        <a href="#" target="_blank">Recenzije</a>
+                        <a href="#" target="_blank">Kontakt</a>
+                        <a href="#" target="_blank" class="hidden-web">Odaberi paket</a>
+                    </div>
 
+                    <a href="#" class="nav-cta">
+                        <p class="white">Odaberi paket</p>
+                    </a>
+                </nav>
+
+                <div class="header-section">
+                    <div class="header-text-wrapper">
+                        <div class="header-text">
+                            <h2>Nutritivna deklaracija <br>
+                                <span>na Vaš zahtev</span></h2>
+                            <p>Nutrikator radi brzu i pouzdanu analizu Vašeg proizvoda - bez odlaska u laboratoriju</p>
+                        </div>
+                        <div class="button-wrap">
+                            <a href="#" class="btn-prim">Odaberi paket</a>
+                            <a href="#" class="btn-sec">Odaberi paket</a>
+                        </div>
+                    </div>
+                    <div id="image-container" class="header-image-wrapper">
+                        <img class="header-product-images" src="assets/images/header-products.png">
+                    </div>
+                </div>
             </header>
 
+            <section class="section-one">
+                
+            </section>
 
+            <section class="section-two">
+                <img src="assets/images/proracun.svg"> 
+                <p>Proračun nutritivnih sastojaka je zakonski dozvoljeni postupak za dobijanje nutritivnih informacijai energetske vrednosti hrane u svrhu deklarisanja, i zakonski dozvoljena alternativa analizi hrane. 
+                    <br>Član 33, Pravilnik o deklarisanju, označavanju i reklamiranju hrane ("Sl. glasnik RS", br. 19/2017, 16/2018, 17/2020 i 118/2020) definiše da su energetska vrednost i količina hranljivih materija, u odnosu na svaki pojedinačni slučaj, prosečne vrednosti koje se dobijaju na osnovu:</p>
+                <div class="flex-row-to-collumn">
+                    <div class="one-unit">
+                        <div class="circle"><h3>01</h3></div>
+                        <p>analize hrane proizvođača</p>
+                    </div>
+                    <div class="one-unit">
+                        <div class="circle"><h3>02</h3></div>
+                        <p>proračuna na osnovu poznatih ili stvarnih prosečnih vrednosti upotrebljenih sastojaka</p>
+                    </div>
+                    <div class="one-unit">
+                        <div class="circle"><h3>03</h3></div>
+                        <p>proračuna iz utvrđenih i opšte prihvaćenih podataka</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-three">
+                <div class="image-text">
+                    <div class="image-row">
+                        <div class="blur">
+                            <img src="assets/images/stars.svg">
+                            <h2>Biljana Krsmanovic</h2>
+                            <p>Direktor, Plazma Keks</p>
+                        </div>
+                    </div>
+                    <div class="text-row">
+                        <h3>Iskustva korisnika</h3>
+                        <h2>Zašto da izaberete baš Nutrikator?</h2>
+                        <p>Ponekad su reči suvišne - stoga pogledajte naše brojke</p>
+                    </div>
+                </div>
+                <div class="flex-row-to-collumn padd-l-r-120">
+                    <div class="one-unit">
+                        <h2 class="big-h2">5% brže</h2>
+                        <p>(deklaracija za 24h)</p>
+                    </div>
+                    <div class="one-unit">
+                        <h2 class="big-h2">5x</h2>
+                        <p>povoljnije</p>
+                    </div>
+                    <div class="one-unit">
+                        <h2 class="big-h2">100%</h2>
+                        <p>pouzdano</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-four">
+                <h2 class="middle">Paketi</h2>
+                <p class="middle">Klikni <a class="dark-link" href="#">ovde</a> da saznaš sta je sve potrebno da nam pošalješ od informacija </p>
+                <div class="flex-row-to-collumn">
+                    <div class="card">
+                        <div class="img-holder">     <img src="assets/images/product1.png"> </div>
+                   
+                        <h3>Basic</h3>
+                        <h2>4,000<span>rsd</span></h2>
+                        <h4>Includes</h4>
+                        <div>
+                            <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                            <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                            <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>            
+                        </div> 
+                        <a href="#" class="btn-black">Odaberi paket</a>
+                    </div>
+                    <div class="card standard">
+                        <div class="img-holder brown">     <img src="assets/images/standard.png"> </div>
+                   
+                        <h3>Standard</h3>
+                        <h2>6,000<span>rsd</span></h2>
+                        <h4>Includes</h4>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <a href="#" class="btn-black">Odaberi paket</a>
+                    </div>
+                    <div class="card premium">
+                        <div class="img-holder green">     <img src="assets/images/premium.png"> </div>
+                   
+                        <h3>Premium</h3>
+                        <h2>8,000<span>rsd</span></h2>
+                        <h4>Includes</h4>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <p><i class="fa-solid fa-check" style="color: #fdae37;"></i> Feature text goes here</p>
+                        <a href="#" class="btn-white">Odaberi paket</a>
+                    </div>
+                </div>
+
+            </section>
         
 
    
