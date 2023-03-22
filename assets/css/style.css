@@ -11,6 +11,9 @@ body {
     color: #1C1917;
     text-decoration: underline;
 }
+.dark-link:hover{
+    background-color: #292524;
+}
 
 .background {
     position:absolute;
@@ -113,7 +116,7 @@ main {
 }
 
 .nav-cta:hover {
-    background-color: #79716B;
+    background-color: #292524;
 }
 
 .nav-cta p {
@@ -211,6 +214,10 @@ main {
     line-height: 100%;
 }
 
+.btn-prim:hover {
+    background-color: #FFC266;
+}
+
 .btn-black {
     background-color: #1C1917;;
     border-radius: 12px;
@@ -223,6 +230,10 @@ main {
     font-weight: 500;
     font-size: 16px;
     line-height: 100%;
+}
+
+.btn-black:hover{
+    background-color: #292524;
 }
 
 .btn-white {
@@ -239,6 +250,10 @@ main {
     line-height: 100%;
 }
 
+.btn-white:hover {
+    background-color: #E2E2E2;
+}
+
 
 .btn-sec {
     background-color: #F3F3F3;
@@ -252,6 +267,10 @@ main {
     line-height: 100%;
 }
 
+.btn-sec:hover {
+    background-color: #E2E2E2;
+}
+
 .btn-footer {
     background-color: #04635D;
     border-radius: 32px;
@@ -262,6 +281,10 @@ main {
     font-weight: 500;
     font-size: 28px;
     line-height: 120%;
+}
+
+.btn-footer:hover {
+    background-color: #04635dde;
 }
 
 .header-image-wrapper {
@@ -280,6 +303,43 @@ main {
     border-radius: 48px;
     margin-top: 80px;
     margin-bottom: 72px;
+    color: white;
+
+}
+
+.content-wrap {
+    padding: 220px 180px;
+}
+
+.section-one h3 {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: #FFC266;
+    margin: 0;
+}
+
+.section-one h2 {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    margin: 0;
+}
+
+.section-one p {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.01em;
+    color: #7EEEE7;
+    max-width: 696px;
+    margin: 0;
+}
+
+.section-one .p-2nd {
+    color: #FFC266;
 }
 
 .section-one img {
@@ -287,6 +347,10 @@ main {
     position: absolute;
     right: 47px;
     max-height: 864px;
+}
+
+.img-left {
+    left: 0;
 }
 
 .image-container {
@@ -304,42 +368,77 @@ main {
   }
   
   .text-container {
-    position: absolute;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
-    width: 100%;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0;
+    gap: 12px;
+    padding-top: 36px;
   }
-  
-  .text-container h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+
+  .p-wrap {
+    display: flex;
+    flex-direction: column;
   }
-  
-  .text-container p {
-    font-size: 14px;
-    margin-bottom: 10px;
+
+  .counter {
+    display: flex;
+    width: 66px;
+    height: 44px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button-container i {
+    width: 20px;
+    height: 20px;
+
   }
   
   .button-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
+    gap: 8px;
+    padding-left: 300px;
   }
   
   .button-container button {
+    width: 50px;
+    height: 44px;
+    background: #0AD38B;
+    border-radius: 22px;
     padding: 10px;
     font-size: 20px;
     border: none;
-    background-color: #ddd;
-    color: #555;
     cursor: pointer;
   }
+
+  .button-container button:active {
+    width: 50px;
+    height: 44px;
+    background: #129769;
+    border-radius: 22px;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .button-container button:disabled {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.inactive {
+    background-color: rgba(255, 255, 255, 0.1);
+}
   
   .button-container button:hover {
-    background-color: #555;
+    background-color:#0AD38B;
     color: #fff;
   }
   
@@ -512,12 +611,7 @@ main {
     line-height: 120%;
     max-width: 485px;
     margin: 16px 0px 8px 0px;
-    /* or 58px */
-
     letter-spacing: -0.01em;
-
-    /* Black */
-
     color: #000000;
 }
 
