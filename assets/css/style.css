@@ -205,7 +205,7 @@ main {
 .btn-prim {
     background-color: #FDAE37;;
     border-radius: 12px;
-    padding: 12px 24px;
+    padding: 16px 24px;
     text-decoration: none;
     display: inline-block;
     color: #1C1917;
@@ -258,7 +258,7 @@ main {
 .btn-sec {
     background-color: #F3F3F3;
     border-radius: 12px;
-    padding: 12px 24px;
+    padding: 16px 24px;
     text-decoration: none;
     display: inline-block;
     color: #1C1917;
