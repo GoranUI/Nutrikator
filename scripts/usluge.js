@@ -70,4 +70,4 @@
       $(".right-button").prop("disabled", false).removeClass("inactive");
     }
   }
-});s
+});

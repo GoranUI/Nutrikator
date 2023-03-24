@@ -933,6 +933,10 @@ letter-spacing: -0.01em;
     transition: transform 0.5s ease, -webkit-transform 0.5s ease;
 }
 
+.card:hover {
+    transform: scale(105%) ease;
+}
+
 
 
 
@@ -1122,6 +1126,7 @@ letter-spacing: -0.01em;
 }
 
 video {
+    background: rgb(249, 239, 235)
     aspect-ratio: 1;
     border-radius: 38px;
     width: 50%;
