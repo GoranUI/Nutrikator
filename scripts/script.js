@@ -11,7 +11,7 @@ function parallaxIt(target, movement, reset) {
  
 let rect = {};
 let mouse = { x: 0, y: 0, moved: false };
- 
+
 $(window).on('resize scroll', () => {
   rect = $('#image-container')[0].getBoundingClientRect();
 });
@@ -36,4 +36,13 @@ $(() => {
     }
     mouse.moved = false;
   });
+
+    // Smooth scroll to section when a navigation link is clicked
+    $('nav a').on('click', function(e) {
+      e.preventDefault();
+      const section = $($(this).attr('href'));
+      $('html, body').animate({
+        scrollTop: section.offset().top
+      }, 1000);
+    });
 });
