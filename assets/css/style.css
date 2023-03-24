@@ -1126,7 +1126,7 @@ letter-spacing: -0.01em;
 }
 
 video {
-    background: rgb(249, 239, 235)
+    background: rgb(249, 239, 235);
     aspect-ratio: 1;
     border-radius: 38px;
     width: 50%;
