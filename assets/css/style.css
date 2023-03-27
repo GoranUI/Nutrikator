@@ -1118,6 +1118,9 @@ letter-spacing: -0.01em;
 .social-icons i{
     font-size: 36px;
 }
+.social-icons i:hover {
+    background-color: #04635dde;
+}
 
 .nutrikatorsvg {
     -webkit-box-flex: 33%;
