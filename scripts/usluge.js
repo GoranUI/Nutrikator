@@ -19,18 +19,20 @@
         ];
         var paragraphs = [
           "Izračunavanje energetske vrednosti proizvoda i njegovih nutritivnih sastojaka prema standardima deklarisanja -",
-          "Nulla auctor enim eu est pharetra, id eleifend felis maximus. Aenean vitae urna ut lectus consequat commodo. ",
-          "Aliquam interdum ipsum purus, sed dapibus sapien mollis vel. Suspendisse porttitor posuere purus, in maximus nunc consectetur eget.",
-          "Proin bibendum risus et velit pharetra porttitor. ",
-          "Fusce placerat quis velit vel pretium. Curabitur viverra molestie felis, ut varius sapien venenatis eget. In ullamcorper ante eu ultrices euismod. Suspendisse fermentum convallis nulla, sed."
+          "Definisanje naziva samog proizvoda i određivanje grupe kojoj pripada, u skladu sa propisanom zakonskom regulativom",
+          "Određivanje spiska sastojaka proizvoda, u skladu sa zahtevima Pravilnika o deklarisanju",
+          "Isticanje alergena, u skladu sa zahtevima Pravilnika o deklarisanju ",
+          "Provera uslova za upotrebu aditiva, u skladu sa Pravilnikom o upotrebi aditiva u hrani",
+          "Kreiranje nutritivnih izjava, u skladu sa sastavom proizvoda"
         ];
 
         var paragraphs2 = [
-          "proteini, ukupne masti, zasićene masti, ugljeni hidrati, šećeri</span>",          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at mi vel elit vehicula pulvinar. Vestibulum lacinia magna et ante hendrerit, nec vestibulum nibh commodo. Etiam eleifend justo at interdum semper.",
-          "Mauris rutrum lorem id dolor sollicitudin, ac commodo ex convallis.",
-          "Proin pellentesque urna eget orci gravida, eu cursus velit laoreet. Aliquam quis quam nisi. Suspendisse eu aliquet nibh.",
-          "Nam eget eleifend elit, nec lacinia nisl. Donec pulvinar, enim quis malesuada maximus, velit velit vehicula justo, non aliquet mi magna non est.",
-          "Integer pharetra vulputate mauris vel hendrerit."
+        "Kreiranje nutritivnih izjava, u skladu sa sastavom proizvoda",
+        "",
+        "",
+        "",
+        "",
+        ""
         ];
    
   $(".left-button").prop("disabled", true); // disable left button initially

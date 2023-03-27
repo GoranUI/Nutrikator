@@ -371,9 +371,16 @@ background-image: url("../images/ornaments.png");
 }
 
 /* SECTION ONE */
-
+.slika {
+    background-image: url("../images/image1.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+    border-radius: 38px;
+    width: 120px;
+    
+}
 .section-one {
-    height: 600px;
+    height: 655px;
     background: #04635D;
     border-radius: 48px;
     margin-top: 80px;
@@ -391,7 +398,10 @@ background-image: url("../images/ornaments.png");
 }
 
 .content-wrap {
-    padding: 160px 0px 160px 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 140px 0px 140px 160px;
 }
 
 .section-one h3 {
@@ -416,19 +426,20 @@ letter-spacing: -0.01em;
     font-size: 32px;
     line-height: 130%;
 letter-spacing: -0.01em;
-    color: #7EEEE7;
+    color: #FFC266;
     max-width: 696px;
     margin: 0;
 }
 
 .section-one .p-2nd {
-    color: #FFC266;
+    color: #ffffff;
+    font-style: italic;
 }
 
 
 
 .img-left {
-    left: 0;
+    height: inherit;
     position: absolute;
 }
 
@@ -586,6 +597,7 @@ background-color: rgba(255, 255, 255, 0.1);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -961,7 +973,8 @@ background: rgba(245, 241, 237, 0.5);
         border-radius: 8px;
 }
 
-/*.img-holder img{
+/*
+.img-holder img{
     position: relative;
     width: 352px;
     height: 213px;
@@ -969,17 +982,39 @@ background: rgba(245, 241, 237, 0.5);
     top: -89px;
 }
 */
+
 .card h3 {
+    z-index: 15;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
     line-height: 120%;
     margin-top: 45px;
     margin-bottom: 0px;
-letter-spacing: -0.01em;
+    letter-spacing: -0.01em;
     color: #44403C;
 }
 
+.premium-label {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-content: flex-start;
+}
+
+.label {
+        bottom: -40px;
+        position: relative;
+        display: flex;
+        background: #1C1917;
+        padding: 4px 8px;
+        border-radius: 8px;
+        color: white;
+        max-height: 28px;
+        height: 28px;
+        z-index: 15;
+}
 .card h2 {
+    z-index: 15;
     font-weight: 500;
     font-size: 48px;
     line-height: 120%;
@@ -990,10 +1025,12 @@ letter-spacing: -0.01em;
 }
 
 .card h2 span {
+    z-index: 15;
     color: #A9A29D;
 }
 
 .card h4 {
+    z-index: 15;
     margin: 0;
     font-weight: 400;
     font-size: 16px;
@@ -1003,6 +1040,7 @@ letter-spacing: -0.01em;
 }
 
 .card p {
+    z-index: 15;
     font-weight: 400;
     font-size: 16px;
     line-height: 165%;
@@ -1025,6 +1063,7 @@ letter-spacing: -0.01em;
     display: -ms-flexbox;
     display: flex;
     gap: 4px;
+    padding-bottom: 24px;
 }
 
 .standard {
@@ -1088,14 +1127,14 @@ letter-spacing: -0.01em;
 .overlayborder {
     position: relative;
     z-index: 10;
-    border-bottom: solid #F5F1ED 48px;
+    border-bottom: solid #F5F1ED 60px;
 }
 
 .basicborder {
-    border-bottom: solid rgb(253, 251, 248) 48px;
+    border-bottom: solid rgb(253, 251, 248) 60px;
 }
 .greenborder{
-    border-bottom: solid #04635D 48px;
+    border-bottom: solid #04635D 60px;
     
 }
 .auto {
@@ -1118,6 +1157,11 @@ letter-spacing: -0.01em;
 .social-icons i{
     font-size: 36px;
 }
+
+.fa-brands:hover {
+  color: #04635dde!important; /* Change this to the desired color */
+}
+
 
 .nutrikatorsvg {
     -webkit-box-flex: 33%;
@@ -1217,6 +1261,29 @@ letter-spacing: -0.01em;
     min-height: 500px;
 }
 
+/* RESPONSIVE TABLET 768 PX*/
+
+
+@media (max-width:768px) {
+
+    .header-text-wrapper {
+        padding-left: 36px;
+    }
+    .header-text h2 {
+        font-size: 36px;
+    }
+    .header-text p {
+        font-size: 16px;
+        max-width: 250px;
+    }
+    .button-wrap {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+
+}
+/* RESPONSIVE MOBILE 640PX*/
 
 @media (max-width:640px) {
 
@@ -1330,17 +1397,21 @@ main {
 .section-one {
     height: auto;
 }
-.section-one img {
+.section-one-img {
     border-radius: 38px;
+    max-width: inherit;
 }
 .img-right {
     position: relative;
     border-radius: 38px;
 }
 
-.slika {
-    display: flex;
+.img-right {
+    position: relative;
+    border-radius: 38px;
 }
+
+
 
 .slika img {
     border-radius: 38px;
@@ -1400,6 +1471,7 @@ display: none;
 }
 
 .flex-row-to-collumn {
+    justify-content: space-around;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1420,6 +1492,7 @@ font-weight: 500;
 /*responsive sec three*/
 
 .section-three {
+    margin-bottom: 24px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1484,7 +1557,9 @@ font-weight: 500;
 .section-four h2 {
     font-size: 36px;
 }
-
+.section-four p {
+    margin-bottom: 24px;
+}
 .card {
     width: auto;
     height: auto;
