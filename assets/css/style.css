@@ -170,6 +170,11 @@ height: 34.21px;
     padding-top: 110px;
 }
 
+#hide-after-submit {
+    display: flex;
+    flex-direction: column;
+}
+
 .modal-h2 {
     font-weight: 500!important;
     font-size: 28px!important;
