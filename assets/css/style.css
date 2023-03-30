@@ -166,13 +166,13 @@ height: 34.21px;
 
 /* MODAL */
 
-#success-message {
-    padding-top: 110px;
-}
-
 #hide-after-submit {
     display: flex;
     flex-direction: column;
+}
+
+#success-message {
+    padding-top: 110px;
 }
 
 .modal-h2 {
@@ -509,6 +509,7 @@ letter-spacing: -0.01em;
 }
 
 .btn-premium {
+    cursor: pointer;
     font-family: 'Poppins';
     width: 100%;
     border: none;
@@ -893,7 +894,7 @@ strong {
     display: flex;
     width: 44px;
     height: 44px;
-    background: #0AD38B;
+    background: #FDAE37;
     border-radius: 22px;
     color: #ffffff;
 }
@@ -1585,7 +1586,8 @@ video {
     line-height: 170%;
 letter-spacing: -0.01em;
     color: #44403C;
-    max-width: 600px;
+
+    max-width: 520px!important;
 }
 
 .section-five h3 {
@@ -1593,6 +1595,7 @@ letter-spacing: -0.01em;
 }   
 
 .section-five h2 {
+    max-width: 480px!important;
     font-weight: 500;
     font-size: 32px;
     line-height: 130%;
@@ -1600,6 +1603,11 @@ letter-spacing: -0.01em;
     margin: 16px 0px 32px 0px;
 }
 
+.text-row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
 /* SECTION SIX */
 
