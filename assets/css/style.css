@@ -364,6 +364,7 @@ letter-spacing: -0.01em;
 }
 
 .btn-premium {
+    cursor: pointer;
     font-family: 'Poppins';
     width: 100%;
     border: none;
