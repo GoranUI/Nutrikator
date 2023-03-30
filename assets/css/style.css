@@ -221,13 +221,20 @@ color: #79716B;
     background: #FFFFFF;
     border-radius: 12px;
 }
-.emailinput:focus {
+..emailinput:focus {
+    border: 2px solid #292524!important;
+  }
+  .emailinput:active {
     border: 2px solid #292524!important;
   }
 
   input:focus {
         border: 2px solid #292524!important;
   }
+  input:active {
+    border: 2px solid #292524!important;
+}
+  
 
 
 .emailbutton {
