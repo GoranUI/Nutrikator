@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap');
@@ -154,6 +161,129 @@ height: 34.21px;
 }
 
 /* MODAL */
+
+.modal-h2 {
+    font-weight: 500!important;
+    font-size: 28px!important;
+    line-height: 120%!important;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #000000;
+    margin: 0!important;
+}
+
+.modal-p {
+    padding-bottom: 40px;
+
+    font-weight: 400!important;
+    font-size: 16px!important;
+    line-height: 140%!important;
+    text-align: center;
+        color: #79716B;
+    margin: 0!important;
+    padding-top: 4px;
+}
+.centered-placeholder {
+    text-align: center;
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 100%;
+color: #79716B;
+  }
+
+.emailinput{
+    padding: 0;
+    border: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 8px;
+
+    max-width: 355px;
+    max-height: 48px;
+
+    width: 355px;
+    height: 48px;
+ 
+
+    background: #FFFFFF;
+    border-radius: 12px;
+}
+.emailinput:focus {
+    border: 2px solid #292524!important;
+  }
+
+  input:focus {
+        border: 2px solid #292524!important;
+  }
+
+
+.emailbutton {
+    margin-top: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 12px 24px;
+    gap: 8px;
+
+    position: absolute;
+    max-width: 355px;
+    width: 355px;
+    max-height: 48px;
+    height: 48px;
+    background: #FDAE37;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+
+    color: #1C1917;
+}
+
+
+
+.form-signup{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 80px;
+}
+
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -164,37 +294,32 @@ height: 34.21px;
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0.60); /* Black w/ opacity */
   }
   
   /* Modal Content/Box */
   .modal-content {
+    background-image: url(../images/modal.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-content: center;
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 15% auto;
+    border-radius: 24px;
+    width: 786px;
+    height: 389px;
   }
-  
-  /* The Close Button */
-  .close {
-    color: #000;
-    float: right;
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
+
 #mc_embed_signup{
-    background:#fff; 
+    
     clear:left; 
     font:14px Helvetica,Arial,sans-serif;  
     width:600px;
@@ -364,7 +489,6 @@ letter-spacing: -0.01em;
 }
 
 .btn-premium {
-    cursor: pointer;
     font-family: 'Poppins';
     width: 100%;
     border: none;
@@ -471,7 +595,9 @@ background-image: url("../images/ornaments.png");
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -480,9 +606,16 @@ background-image: url("../images/ornaments.png");
 }
 
 .content-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 140px 0px 140px 160px;
 }
 
@@ -679,7 +812,8 @@ background-color: rgba(255, 255, 255, 0.1);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -800,9 +934,15 @@ letter-spacing: -0.01em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 80px;
     margin-bottom: 120px;
     gap: 45px;
@@ -969,23 +1109,37 @@ letter-spacing: -0.01em;
 }
 
 .flex-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     max-width: 1100px;
     gap: 12px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding-bottom: 60px;
 }
 
 .checklist {
     gap: 4px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     background-color: #F5F1ED;
     padding: 4px 12px 4px 12px;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     border-radius: 36px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .checklist p {
@@ -997,15 +1151,30 @@ letter-spacing: -0.01em;
     height: 24px;
     background: #1A912D;
     border-radius: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 1101px;
     gap: 48px;
 }
@@ -1016,11 +1185,22 @@ letter-spacing: -0.01em;
 
 
 .one-unit-bot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 30%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-flex: 30%;
+        -ms-flex: 30%;
+            flex: 30%;
 }
 .big-h2 {
     font-weight: 600;
@@ -1096,7 +1276,9 @@ letter-spacing: -0.01em;
 }
 
 .card:hover {
-    transform: scale(105%) ease;
+    -webkit-transform: scale(105%) ease;
+        -ms-transform: scale(105%) ease;
+            transform: scale(105%) ease;
 }
 
 
@@ -1161,11 +1343,18 @@ background: rgba(245, 241, 237, 0.5);
 }
 
 .premium-label {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 8px;
     padding-top: 16px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .black {
@@ -1174,6 +1363,8 @@ background: rgba(245, 241, 237, 0.5);
 
 .label {
         position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         background: #1C1917;
         padding: 4px 8px;
@@ -1324,8 +1515,13 @@ letter-spacing: -0.01em;
 }
 /* SECTION FIVE  */
 .social-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     gap: 32px;
     padding-top: 32px;
 }
@@ -1452,8 +1648,13 @@ letter-spacing: -0.01em;
         max-width: 250px;
     }
     .button-wrap {
-        flex-direction: column;
-        justify-content: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
     }
     
 
@@ -1649,7 +1850,8 @@ display: none;
 }
 
 .flex-row-to-collumn {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1679,10 +1881,15 @@ font-weight: 500;
     
 }
 .one-unit-bot {
-    align-items: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 .flex-row {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .image-text {
@@ -1783,8 +1990,12 @@ font-weight: 500;
     bottom: 0;
     position: absolute;
     left: 0;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
 }
 
 .standard1img {
@@ -1793,16 +2004,28 @@ font-weight: 500;
 }
 
 .card, .img-holder img {
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
 }
 
 .card:hover, .img-holder img {
-    transform: none;
+    -webkit-transform: none;
+        -ms-transform: none;
+            transform: none;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none;
 }
 .standard1img:hover, .standard2img:hover, .standard3img:hover, .standard4img:hover {
-   transform: none;
+   -webkit-transform: none;
+       -ms-transform: none;
+           transform: none;
+    -webkit-transition: none;
+    -o-transition: none;
     transition: none; 
 }
 
