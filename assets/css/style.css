@@ -166,6 +166,10 @@ height: 34.21px;
 
 /* MODAL */
 
+#success-message {
+    padding-top: 110px;
+}
+
 .modal-h2 {
     font-weight: 500!important;
     font-size: 28px!important;
