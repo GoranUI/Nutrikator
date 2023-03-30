@@ -1,36 +1,16 @@
 $(document).ready(function() {
-  // Get the modal and its container
-  var modal = $('#myModal');
-  var modalContainer = $('.modal-content');
-
-  // Show success message on form submission
-  $('#mc-embedded-subscribe-form').on('submit', function(event) {
-    event.preventDefault();
-    $.ajax({
-      url: $(this).attr('action'),
-      method: 'POST',
-      data: $(this).serialize(),
-      dataType: 'json',
-      success: function(response) {
-        showSuccessMessage();
-      },
-      error: function(error) {
-        console.log('Error:', error);
-      }
-    });
+  // Add event listener to form submit button
+  $(".emailbutton").click(function(event) {
+    event.preventDefault(); // Prevents the default form submission behavior
+    showSuccess(); // Calls the showSuccess function
   });
 
-  // Close the modal when the user clicks on the dimmed background
-  modalContainer.on('click', function(event) {
-    if (event.target === this) {
-      modal.hide();
-    }
-  });
+  // Define the showSuccess function to display the success div and submit the form
+  function showSuccess() {
+    $("#success-message").show(); // Shows the success div
+    $("#mc-embedded-subscribe-form").submit(); // Submits the form
+  }
 });
-
-function showSuccessMessage() {
-  $('#success-message').css('display', 'block');
-}
 
 $(document).ready(function() {
   // Get the modal and its container
