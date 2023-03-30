@@ -38,7 +38,7 @@ main {
 }
 
 .white {
-    color: #ffffff;
+    color: #ffffff!important;
 }
 
 .hidden-web {
@@ -334,6 +334,10 @@ letter-spacing: -0.01em;
     background-color: #302c2b;
 }
 
+.full-width {
+    width: 100%!important;
+}
+
 .btn-white {
     border: none;
     background-color: #ffffff;
@@ -358,6 +362,34 @@ letter-spacing: -0.01em;
 .btn-white:hover {
     background-color: #E2E2E2;
 }
+
+.btn-premium {
+    font-family: 'Poppins';
+    width: 100%;
+    border: none;
+    background-color: #44F2E7;
+    border-radius: 12px;
+    padding: 16px 24px;
+    text-decoration: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #1C1917;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+}
+
+.btn-premium:hover {
+    background-color: #81fff7;
+}
+
 
 
 .btn-sec {
@@ -1030,7 +1062,6 @@ letter-spacing: -0.01em;
     font-size: 20px;
     line-height: 140%; 
 letter-spacing: -0.01em;
-    color: #79716B;
     margin-bottom: 100px;
 }
 
@@ -1085,7 +1116,7 @@ background: rgba(245, 241, 237, 0.5);
             flex-direction: column;
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+            justify-content: space-between;
 }
 .basic {
     background: rgb(253, 251, 248);
@@ -1109,12 +1140,20 @@ background: rgba(245, 241, 237, 0.5);
 }
 */
 
+.strong-white {
+    font-weight: 700!important;
+}
+
+.white {
+    color: white;
+}
 .card h3 {
+    position: relative;
     z-index: 15;
     font-weight: 500;
     font-size: 20px;
     line-height: 120%;
-    margin-top: 45px;
+    margin-top: 24px;
     margin-bottom: 0px;
     letter-spacing: -0.01em;
     color: #44403C;
@@ -1124,11 +1163,15 @@ background: rgba(245, 241, 237, 0.5);
     display: flex;
     flex-direction: row;
     gap: 8px;
-    align-content: flex-start;
+    padding-top: 16px;
+    align-items: center;
+}
+
+.black {
+    color: #000000;
 }
 
 .label {
-        bottom: -40px;
         position: relative;
         display: flex;
         background: #1C1917;
@@ -1146,14 +1189,17 @@ background: rgba(245, 241, 237, 0.5);
     line-height: 120%;
     margin-top: 8px;
 letter-spacing: -0.01em;
-    margin-bottom: 40px;
-    color: #1C1917;
+    margin-bottom: 20px;
+
 }
 
 .card h2 span {
     z-index: 15;
     color: #A9A29D;
+    position: relative;
 }
+
+
 
 .card h4 {
     z-index: 15;
@@ -1193,7 +1239,8 @@ letter-spacing: -0.01em;
 }
 
 .standard {
-    background-color: #F5F1ED;
+    background-color: #292524;
+    color: white;
 }
 .brown {
     background-color: #483125;
@@ -1206,13 +1253,14 @@ letter-spacing: -0.01em;
     color: white;
 }
 .premium h3 {
+    margin: 0;
     color: #FFC266;
 }
 .premium h2 {
     color: white;
 }
 .premium span {
-    color: #FFF9F44D;
+    color: #FFF9F44D!important;
 }
 
 .green {
@@ -1253,7 +1301,7 @@ letter-spacing: -0.01em;
 .overlayborder {
     position: relative;
     z-index: 10;
-    border-bottom: solid #F5F1ED 60px;
+    border-bottom: solid #292524 60px;
 }
 
 .basicborder {
