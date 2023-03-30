@@ -30,6 +30,7 @@ $(document).ready(function() {
 
   // Define the showSuccess function to display the success message
   function showSuccess() {
+    $("#hide-after-submit").hide(); // Hide texts
     $("#mc-embedded-subscribe-form").hide(); // Hide the form container
     $("#success-message").show(); // Shows the success div
   }
