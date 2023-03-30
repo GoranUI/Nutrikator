@@ -28,9 +28,9 @@ $(document).ready(function() {
     });
   }
 
-  // Define the showSuccess function to display the success message
-  function showSuccess() {
-    $("#hide-after-submit").hide(); // Hide texts
+  // Define the showSuccess function to display the success message and hide the form and "hide-after-submit" elements
+  function showSuccess() { 
+    $("#hide-after-submit").hide(); // Hide the "hide-after-submit" elements
     $("#mc-embedded-subscribe-form").hide(); // Hide the form container
     $("#success-message").show(); // Shows the success div
   }
