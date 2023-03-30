@@ -153,6 +153,54 @@ height: 34.21px;
     line-height: 100%;
 }
 
+/* MODAL */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 200; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    display: flex;
+    align-content: center;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #000;
+    float: right;
+    font-size: 36px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+#mc_embed_signup{
+    background:#fff; 
+    clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:600px;
+}
+
+
 
 /* HEADER */
 
@@ -287,6 +335,7 @@ letter-spacing: -0.01em;
 }
 
 .btn-white {
+    border: none;
     background-color: #ffffff;
     border-radius: 12px;
     padding: 16px 24px;
@@ -638,12 +687,18 @@ letter-spacing: -0.01em;
 
 .p2 {
     font-weight: 400;
-    font-size: 20px;
-    line-height: 140%;
-letter-spacing: -0.01em;
-    margin: 0;
+    font-size: 16px;
+    line-height: 165%;
+    text-align: center;
+    letter-spacing: -0.01em;
+        margin: 0;
     color: #79716B;
 }
+
+strong {
+    color: #000000;
+}
+
 
 .circle {
     display: -webkit-box;
@@ -680,11 +735,10 @@ letter-spacing: -0.01em;
 
 /* SECTION THREE */
 
-.big-h2 {
+/* .big-h2 {
     font-weight: 600;
     font-size: 36px;
     line-height: 120%;
-    /* identical to box height, or 77px */
     margin: 40px 0px 8px 0px;
 letter-spacing: -0.01em;
 
@@ -708,19 +762,21 @@ letter-spacing: -0.01em;
         -ms-flex-align: start;
             align-items: start;
 }
-
+*/
 .section-three {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
     margin-top: 80px;
     margin-bottom: 120px;
+    gap: 45px;
+    padding-top: 80px;
 }
 
+/*
 .image-text {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -743,7 +799,7 @@ letter-spacing: -0.01em;
     -webkit-box-flex: 48%;
         -ms-flex: 48%;
             flex: 48%;
-    /* align-content: flex-end; */
+
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -763,10 +819,6 @@ letter-spacing: -0.01em;
 .blur {
     padding: 44px 33px;
     width: 90%;
-
-    /* Note: backdrop-filter has minimal browser support
-background: rgba(255, 255, 255, 0.01);
-backdrop-filter: blur(22.5px); */
      
     background: #292524;
 opacity: 0.6;
@@ -797,6 +849,16 @@ letter-spacing: -0.01em;
     color: #ffffff;
 }
 
+.flex-collumn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: left;
+}
 .text-row{
     display: -webkit-box;
     display: -ms-flexbox;
@@ -828,9 +890,8 @@ letter-spacing: -0.01em;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    /* identical to box height, or 28px */
 
-letter-spacing: -0.01em;
+    letter-spacing: -0.01em;
 
     color: #4CAC00;
 }
@@ -849,30 +910,95 @@ letter-spacing: -0.01em;
     font-weight: 400;
     font-size: 16px;
     line-height: 165%;
-    /* or 26px */
     margin: 0;
 
 letter-spacing: -0.01em;
 
-    /* Gray/500 */
-
     color: #79716B;
 }
+*/
+
 
 .padd-l-r-120 {
     padding: 0px 120px 0px 120px;
 }
 
-.flex-collumn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    text-align: left;
+
+
+.section-three h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    margin: 0;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #000000;
 }
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    gap: 12px;
+    justify-content: center;
+    padding-bottom: 60px;
+}
+
+.checklist {
+    gap: 4px;
+    display: flex;
+    flex-direction: row;
+    background-color: #F5F1ED;
+    padding: 4px 12px 4px 12px;
+    justify-content: center;
+    border-radius: 36px;
+    align-items: center;
+}
+
+.checklist p {
+    margin: 0;
+}
+
+.sm-circle {
+    width: 24px;
+    height: 24px;
+    background: #1A912D;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1101px;
+    gap: 48px;
+}
+.flex-row img {
+    width: 96px;
+    height: 96px;
+}
+
+
+.one-unit-bot {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 30%;
+}
+.big-h2 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #000000;
+}
+
+
 
 
 /* SECTION FOUR */
@@ -1465,9 +1591,12 @@ display: none;
 }
 
 .section-two p {
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     margin-bottom: 32px;
+}
+.checklist p {
+    font-size: 14px;
 }
 
 .flex-row-to-collumn {
@@ -1498,6 +1627,13 @@ font-weight: 500;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
+    
+}
+.one-unit-bot {
+    align-items: flex-start;
+}
+.flex-row {
+    flex-direction: column;
 }
 
 .image-text {
@@ -1526,7 +1662,7 @@ font-weight: 500;
     margin-top: 36px;
 }
 .p2 {
-    font-size: 20px!important;
+    font-size: 16px!important;
 }
 
 .image-row{
