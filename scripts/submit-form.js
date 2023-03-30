@@ -37,7 +37,6 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
-  // Get the modal and its container
   var modal = $('#myModal');
   var modalContainer = $('.modal-content');
 
@@ -46,5 +45,11 @@ $(document).ready(function() {
     if (event.target === this) {
       modal.hide();
     }
+  });
+
+  const btnPremium = $('#back-to-site');
+
+  btnPremium.on('click', function() {
+    modal.hide();
   });
 });
