@@ -2,12 +2,12 @@
       $(document).ready(function() {
         var count = 1;
         var images = [
-          "assets/images/image1.png",
-          "assets/images/image2.png",
-          "assets/images/image3.png",
-          "assets/images/image4.png",
-          "assets/images/image5.png",
-          "assets/images/image6.png"
+          "assets/images/image1.webp",
+          "assets/images/image2.webp",
+          "assets/images/image3.webp",
+          "assets/images/image4.webp",
+          "assets/images/image5.webp",
+          "assets/images/image6.webp"
         ];
         var titles = [
           "01",
@@ -52,12 +52,21 @@
   });
   
   function updateContent() {
-    // update image, title, and counter
-    $(".section-one img-right").attr("src", images[count-1]);
-    $(".section-one .text-container h2").text(titles[count-1]);
-    $(".section-one .text-container .p-1st").text(paragraphs[count-1]);
-    $(".section-one .text-container .p-2nd").text(paragraphs2[count-1]);
-    $(".section-one .button-container .counter").text(count + " of 6");
+    // fade out elements
+    $(".section-one .text-container h2, .section-one .text-container .p-1st, .section-one .text-container .p-2nd" ).fadeOut(500);
+    $(".section-one .img-right, .section-one .img-img").fadeOut(500, function() {
+      // update image, title, and counter
+      $(".section-one .img-right").attr("src", images[count-1]);
+      $(".section-one .img-img").attr("src", images[count-1]);
+      $(".section-one .text-container h2").text(titles[count-1]);
+      $(".section-one .text-container .p-1st").text(paragraphs[count-1]);
+      $(".section-one .text-container .p-2nd").text(paragraphs2[count-1]);
+      $(".section-one .button-container .counter").text(count + " of 6");
+      
+      // fade in elements
+      $(".section-one .text-container h2, .section-one .text-container .p-1st, .section-one .text-container .p-2nd" ).fadeIn(500);
+      $(".section-one .img-right, .section-one .img-img").fadeIn(500);
+    });
     
     // enable/disable buttons based on count
     if (count === 1) {
