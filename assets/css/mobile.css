@@ -1568,6 +1568,7 @@ letter-spacing: -0.01em;
 }
 
 
+
 /* RESPONSIVE TABLET 768 PX*/
 
 
@@ -1679,9 +1680,6 @@ letter-spacing: -0.01em;
         max-height: unset;
     }
 }
-
-
-
 /* RESPONSIVE MOBILE 640PX*/
 
 @media (max-width:640px) {
@@ -1713,7 +1711,7 @@ main {
     display: flex;
     border-radius: 24px;
     margin-top: 28px;
-    background: transparent;
+    background-color: transparent;
 }
 
 .header-text-wrapper {
@@ -1740,7 +1738,7 @@ main {
 }
 
 .header-image-wrapper {
-    background: linear-gradient(180deg, #FFD698 0%, #F0CDB3 100%);
+    background-color: #FFC671;
     border-radius: 24px;
 }
 
