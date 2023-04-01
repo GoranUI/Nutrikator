@@ -1602,7 +1602,7 @@ letter-spacing: -0.01em;
 
     .section-one {
         height: 520px;
-        max-height: 520px;
+        max-height: fit-content;
     }
 
     .content-wrap {
@@ -1677,6 +1677,14 @@ letter-spacing: -0.01em;
     
     .section-six {
         max-height: unset;
+    }
+    .sec-six-wrap {
+
+        padding: 48px 80px;
+
+    }
+    .align-center {
+        align-items: center!important;
     }
 }
 
@@ -1821,7 +1829,6 @@ main {
     letter-spacing: -0.01em;
 }
 
-/* SECTION ONE */
 .slika {
     max-width: unset;
     width: 100%;
