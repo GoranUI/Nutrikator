@@ -2057,7 +2057,7 @@ font-weight: 500;
     padding: 12px 0px 40px 0px;
 }
 .gap20 {
-    gap: 24px;
+    gap: 54px;
 }
 
 .img-holder {
@@ -2095,17 +2095,19 @@ font-weight: 500;
 }
 
 .standard3img {
-    width: 114px;
+    width: 137px;
     /* height: auto; */
     z-index: 2;
-    bottom: -50px;
+    bottom: -110px;
     position: absolute;
  
     
 }
-
+.standard4img {
+    width: 169px;
+}
 .standard1img {
-    width: 443px;
+    width: 465px;
     bottom: -50px;
 }
 
@@ -2146,7 +2148,7 @@ font-weight: 500;
 /*responsive sec five*/
 
 .section-five {
-    padding: 38px 0px 0px 0px;
+    padding: 36px 0px 60px 0px;
 }
 
 .reverse-column {
