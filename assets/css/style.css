@@ -624,7 +624,7 @@ letter-spacing: -0.01em;
 }
 
 .header-image-wrapper {
-background-image: url("../images/ornaments.png");
+
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 48px;
