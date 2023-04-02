@@ -1697,6 +1697,26 @@ letter-spacing: -0.01em;
     .gap20 {
         gap: 48px;
     }
+
+    .modal-content {
+        width: 90%;
+        height: 60%;
+        margin: 30% auto;
+    }
+    .emailinput, .emailbutton {
+        width: 295px;
+    }
+    
+    #hide-after-submit {
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    
+    .modal-h2, .modal-p {
+        max-width: 250px;
+    }
+    
 }
 
 
@@ -1916,7 +1936,6 @@ display: none;
     display: block;
 }
 
-
 /*responsive sec two*/
 
 .section-two {
@@ -2045,11 +2064,13 @@ font-weight: 500;
 
 }
 .section-four p {
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
 .card {
     width: auto;
     height: auto;
+   padding-top: 24px;
+    
 }
 
 .card h4 {
@@ -2085,24 +2106,6 @@ font-weight: 500;
 .basicborder {
     border-bottom: solid rgb(253, 251, 248) 150px;
 
-}
-.modal-content {
-    width: 90%;
-    height: 60%;
-    margin: 30% auto;
-}
-.emailinput, .emailbutton {
-    width: 295px;
-}
-
-#hide-after-submit {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-}
-
-.modal-h2, .modal-p {
-    max-width: 250px;
 }
 
 .standard3img {
@@ -2159,7 +2162,7 @@ font-weight: 500;
 /*responsive sec five*/
 
 .section-five {
-    padding: 36px 0px 60px 0px;
+    padding: 60px 0px 96px 0px;
 }
 
 .reverse-column {
